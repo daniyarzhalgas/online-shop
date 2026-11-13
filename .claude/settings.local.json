@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Claude_Docs__update",
+      "Bash(./gradlew dependencies *)",
+      "Read(//c/Program Files/Java/**)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Program Files/Microsoft/**)",
+      "Bash(where java *)",
+      "Bash(JAVA_HOME=\"C:/Program Files/Java/jdk-17.0.18\" ./gradlew bootRun *)",
+      "Bash(JAVA_HOME=\"C:/Program Files/Java/jdk-17.0.18\" ./gradlew dependencies --configuration compileClasspath)",
+      "Bash(taskkill //PID 13664 //F)",
+      "Bash(JAVA_HOME=\"/c/Program Files/Java/jdk-17.0.18\" ./gradlew bootRun)"
+    ]
+  }
+}
