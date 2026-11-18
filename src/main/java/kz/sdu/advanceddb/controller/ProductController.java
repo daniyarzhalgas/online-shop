@@ -1,8 +1,10 @@
 package kz.sdu.advanceddb.controller;
 
 import jakarta.validation.Valid;
+import kz.sdu.advanceddb.dto.PopularProductDto;
 import kz.sdu.advanceddb.dto.ProductRequest;
 import kz.sdu.advanceddb.model.Product;
+import kz.sdu.advanceddb.service.AnalyticsService;
 import kz.sdu.advanceddb.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -18,6 +20,13 @@ import java.util.List;
 public class ProductController {
 
     private final ProductService productService;
+    private final AnalyticsService analyticsService;
+
+    @GetMapping("/popular")
+    public ResponseEntity<List<PopularProductDto>> getPopular(
+            @RequestParam(defaultValue = "10") int limit) {
+        return ResponseEntity.ok(analyticsService.getPopularProducts(limit));
+    }
 
     @GetMapping
     public ResponseEntity<List<Product>> getAll(

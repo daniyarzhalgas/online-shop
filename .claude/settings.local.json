@@ -10,7 +10,10 @@
       "Bash(JAVA_HOME=\"C:/Program Files/Java/jdk-17.0.18\" ./gradlew bootRun *)",
       "Bash(JAVA_HOME=\"C:/Program Files/Java/jdk-17.0.18\" ./gradlew dependencies --configuration compileClasspath)",
       "Bash(taskkill //PID 13664 //F)",
-      "Bash(JAVA_HOME=\"/c/Program Files/Java/jdk-17.0.18\" ./gradlew bootRun)"
+      "Bash(JAVA_HOME=\"/c/Program Files/Java/jdk-17.0.18\" ./gradlew bootRun)",
+      "Bash(./gradlew compileJava)",
+      "Bash(JAVA_HOME=\"C:/Program Files/Java/jdk-17.0.18\" ./gradlew compileJava)",
+      "Bash(npm install *)"
     ]
   }
 }
